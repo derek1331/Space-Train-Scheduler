@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Scheduler</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script defer src="assets/javascript/app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="space-train-schedule">
+    <header>Space Train Schedule</header>
+  </div>
+
+  <div id="current-train-schedule">
+  
+    <h1 class="h1">Current Train Schedule</h1>
+
+    <table id="table">
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency (min)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+      </tr>
+      <tr>
+        <td>The People's</td>
+        <td>Uranus</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="add-train">
+   
+    <h2 class="h1">Add Train</h2>
+  
+    <form id="form" action="">
+      <label for="" >Train Name</label>
+        <input id="train-name" class="input" type="text">
+      <label for="">Destination</label>
+        <input id="destination" class="input" type="text">
+      <label for="">First Train Time</label>
+        <input id="first-train" class="input" type="time">
+      <Label for="">Frequency (minutes)</Label>
+        <input id="frequency" class="input" type="number">
+      <button id="add" type="submit">Add</button>
+    </form>
+  </div>
+
+
+
+
+</body>
+
+</html>
