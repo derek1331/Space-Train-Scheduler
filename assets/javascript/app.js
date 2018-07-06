@@ -66,7 +66,7 @@ database.ref().on("child_added", function(childSnapshot) {
   var nextTrainMin = trainFrequency - remainder;
 
   // format next arrival time
-  var nextTrainArrival = moment().add(nextTrainMin, "m").format("HH:mm");
+  var nextTrainArrival = moment().add(nextTrainMin, "m").format("hh:mm A");
 
 
   // Train Info
@@ -88,4 +88,40 @@ database.ref().on("child_added", function(childSnapshot) {
   // Append the new row to the table
   $("#table").append(newRow);
 });
+
+// $("input[type='text'], input[type='number'],input[type='date']").on("keyup", function(){
+//   if($("input[type='text']").val() != "" && $("input[type='number'").val() != "" && $("input[type='date'").val() != ""){
+//       $("input[type='submit']").removeAttr("disabled");
+//   } else {
+//       $("input[type='submit']").attr("disabled", "disabled");
+//   }
+// });
+
+// $("input[type='number']").on("change", function(){
+//   if($("input[type='text']").val() != "" && $("input[type='number']").val() != "" && $("input[type='date']").val() != ""){
+//       $("input[type='submit']").removeAttr("disabled");
+//   } else {
+//       $("input[type='submit']").attr("disabled", "disabled");
+//   }
+// });
+
+// $(document).ready(function() {
+//   var $form = $('form'), // cache
+//       $inputs = $form.find(':input'), // MOD extra caching
+//       $buttons = $inputs.not(':submit, :reset, :button'),
+//       $fields = $inputs.not($buttons),
+//       $submits = $buttons.filter(':submit');
+
+//   $submits.prop('disabled', true); // disable submit btn
+//   $fields.keyup(function() { // monitor all inputs for changes, MOD changed to keyup
+//        var disable = false;
+//        $fields.each(function(i, el) { // test all inputs for values
+//           if ($(el).val() === '') { // MOD use jQuery to get value
+//                   disable = true; // disable submit if any of them are still blank
+//                   return false; // MOD stop "each" if even one field is blank... less waste
+//           }
+//        });
+//        $submits.prop('disabled',disable);
+//       });
+// });
 
