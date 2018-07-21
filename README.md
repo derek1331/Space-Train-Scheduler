@@ -4,4 +4,4 @@ Provides up-to-date information about various space trains, namely their arrival
 
 
 
-[Link to Train-Scheduler](https://derek1331.github.io/Train-Scheduler/)
+[Link to Train-Scheduler](https://derek1331.github.io/Space-Train-Scheduler/)
