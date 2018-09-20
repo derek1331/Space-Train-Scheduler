@@ -23,6 +23,10 @@ $("#add").on("click", function(event) {
   var trainFirst = $("#first-train").val().trim();
   var trainFrequency = $("#frequency").val().trim();
 
+  if (trainName === "" || trainDestination === "" || trainFirst === "" || trainFrequency === "" ) {
+    return;
+  }
+
   // Creates local "temporary" object for holding employee data
   var newTrain = {
     train: trainName,
