@@ -1,4 +1,4 @@
-# Space-Train-Scheduler
+# Space Train Scheduler
 
 [Demo](https://derek1331.github.io/Space-Train-Scheduler/)
 
